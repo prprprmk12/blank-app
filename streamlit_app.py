@@ -13,7 +13,7 @@ import http.client
 load_dotenv() # Load variables from .env if present
 
 MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY", "Ybw8mXxtjlIQIpy1xVSZU5Cap1V1unta")
-POLLINATIONS_API_KEY = os.getenv("Pollinations_API_Key") or os.getenv("POLLINATIONS_API_KEY")
+POLLINATIONS_API_KEY = os.getenv("Pollinations_API_Key", "sk_HqwqD3mhFkpk7YDlFcKmg1qdfWEv6FUC") or os.getenv("POLLINATIONS_API_KEY")
 PROJECT_NAME = "Платформа 2026: AI-Интеграция"
 
 st.set_page_config(page_title=PROJECT_NAME, layout="wide", page_icon="🎓")
